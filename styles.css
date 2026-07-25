@@ -1,0 +1,98 @@
+:root {
+  --bg-main: #f7f7f8;
+  --bg-accent: #f7f7f8;
+  --panel: #ffffff;
+  --text-main: #1f1f1f;
+  --muted: #5f6368;
+  --brand: #202123;
+  --brand-2: #202123;
+  --ok: #1f7a45;
+}
+
+.stApp {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+h1, h2, h3 {
+  color: var(--text-main);
+  letter-spacing: 0.3px;
+}
+
+.block-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding-top: 2.5rem !important;
+}
+
+.home-title {
+  text-align: center;
+  margin-bottom: 0.35rem;
+}
+
+.home-subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+[data-testid="stImage"] img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bible-card {
+  background: var(--panel);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 12px 32px rgba(54, 34, 18, 0.08);
+  backdrop-filter: blur(5px);
+}
+
+.bible-muted {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.stButton > button {
+  border-radius: 999px;
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+}
+
+.stButton > button:hover {
+  filter: brightness(1.05);
+}
+
+[data-testid="stChatInput"] {
+  background: #ffffff;
+  border: 1px solid #d9d9e3;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+[data-testid="stChatInput"] textarea {
+  font-size: 1rem;
+}
+
+[data-testid="stChatMessage"] {
+  border-radius: 14px;
+  padding: 0.75rem 0;
+}
+
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p {
+  line-height: 1.75;
+  font-size: 0.97rem;
+}
+
+@media (max-width: 768px) {
+  .block-container {
+    padding-top: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
